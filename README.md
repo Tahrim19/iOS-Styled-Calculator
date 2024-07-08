@@ -2,7 +2,7 @@
 
 Welcome to the iOS Style Calculator project! This is a basic calculator application built with React, designed to mimic the sleek and intuitive interface of the iOS calculator.
 
-![Calculator Preview](calculator-preview.png)
+![LINK](https://i-os-styled-calculator.vercel.app/)
 
 ## Features ✨
 
