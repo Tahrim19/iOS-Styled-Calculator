@@ -2,7 +2,9 @@
 
 Welcome to the iOS Style Calculator project! This is a basic calculator application built with React, designed to mimic the sleek and intuitive interface of the iOS calculator.
 
-![LINK](https://i-os-styled-calculator.vercel.app/)
+## Live Demo 🌐
+
+Check out the live demo of the iOS Style Calculator [here](https://i-os-styled-calculator.vercel.app/).
 
 ## Features ✨
 
@@ -29,7 +31,7 @@ Welcome to the iOS Style Calculator project! This is a basic calculator applicat
 To run this project locally, follow these simple steps:
 
 1. **Clone the repository**:
-   git clone https://github.com/your-username ios-style-calculator.git
+   git clone https://github.com/Tahrim19/iOS-Styled-Calculator.git
    cd ios-style-calculator
 
 
@@ -40,5 +42,3 @@ To run this project locally, follow these simple steps:
    npm start
 
    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
