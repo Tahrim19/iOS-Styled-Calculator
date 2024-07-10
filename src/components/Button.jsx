@@ -1,45 +1,48 @@
 import React from 'react';
 import '../style.css';
 
-const Button = () => {
+const Button = ({onButtonClick}) => {
     const handleClick = (buttonValue) => {
         console.log(`Button ${buttonValue} clicked`);
     };
 
+    const buttons = [
+        { value: 'AC', className: 'that-three-btn' },
+        { value: '+/-', className: 'that-three-btn' },
+        { value: '%', className: 'that-three-btn' },
+        { value: '/', className: 'operator' },
+        { value: '7', className: '' },
+        { value: '8', className: '' },
+        { value: '9', className: '' },
+        { value: 'x', className: 'operator' },
+        { value: '4', className: '' },
+        { value: '5', className: '' },
+        { value: '6', className: '' },
+        { value: '-', className: 'operator' },
+        { value: '1', className: '' },
+        { value: '2', className: '' },
+        { value: '3', className: '' },
+        { value: '+', className: 'operator' },
+        { value: '0', className: 'zero' },
+        { value: '.', className: '' },
+        { value: '=', className: 'operator' }
+    ];
+
     return (
         <div className='buttons'>
-            <button className='that-three-btn' onClick={() => handleClick('AC')}>AC</button>
-            <button className='that-three-btn' onClick={() => handleClick('+/-')}>+/-</button>
-            <button className='that-three-btn' onClick={() => handleClick('%')}>%</button>
-            <button className='operator' onClick={() => handleClick('/')}>/</button>
-
-            <button onClick={() => handleClick('7')}>7</button>
-            <button onClick={() => handleClick('8')}>8</button>
-            <button onClick={() => handleClick('9')}>9</button>
-            <button className='operator' onClick={() => handleClick('x')}>x</button>
-
-
-            <button onClick={() => handleClick('4')}>4</button>
-            <button onClick={() => handleClick('5')}>5</button>
-            <button onClick={() => handleClick('6')}>6</button>
-            <button className='operator'onClick={() => handleClick('-')}>-</button>
-
-
-            <button onClick={() => handleClick('1')}>1</button>
-            <button onClick={() => handleClick('2')}>2</button>
-            <button onClick={() => handleClick('3')}>3</button>
-            <button className='operator' onClick={() => handleClick('+')}>+</button>
-
-            <button className='zero' onClick={() => handleClick('0')}>0</button>
-            <button onClick={() => handleClick('.')}>.</button>
-            <button className='operator' onClick={() => handleClick('=')}>=</button>
-
-
-
-            
-           
+            {buttons.map((button, index) => (
+                <button
+                    key={index}
+                    className={button.className}
+                    // onClick={() => handleClick(button.value)}
+                    onClick={() => onButtonClick(button.value)}
+                >
+                    {button.value}
+                </button>
+            ))}
         </div>
     );
 };
 
 export default Button;
+

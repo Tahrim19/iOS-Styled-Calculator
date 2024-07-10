@@ -19,14 +19,14 @@ body{
     margin-top: 30px;
     width: 290px;
     background-color: #f0f0f5;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
-
+    height: 480px;
 }
 
 .display {
@@ -57,6 +57,14 @@ body{
     height: 65px;
     border-radius: 50%;
     color: white;
+}
+
+.buttons button.zero {
+    grid-column: span 2;
+    width: 150px; /* Adjust the width for the "0" button */
+    border-radius: 35px; /* To maintain a similar rounded appearance */
+    text-align: left;
+    padding-left: 25px;
 }
 
 .buttons button.that-three-btn{
