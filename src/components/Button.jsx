@@ -1,6 +1,8 @@
 import React from 'react';
 import '../style.css';
 
+import CustomButton from './CustomButton';
+
 const Button = ({onButtonClick}) => {
     const handleClick = (buttonValue) => {
         console.log(`Button ${buttonValue} clicked`);
@@ -31,14 +33,20 @@ const Button = ({onButtonClick}) => {
     return (
         <div className='buttons'>
             {buttons.map((button, index) => (
-                <button
-                    key={index}
+                <CustomButton 
+                    value={button.value} 
+                    onButtonClick={handleClick} 
                     className={button.className}
-                    // onClick={() => handleClick(button.value)}
-                    onClick={() => onButtonClick(button.value)}
-                >
-                    {button.value}
-                </button>
+                />
+                // {(button.className && button.className !== '') ?  : null}
+                // <button
+                //     key={index}
+                //     className={button.className}
+                //     // onClick={() => handleClick(button.value)}
+                //     onClick={() => onButtonClick(button.value)}
+                // >
+                //     {button.value}
+                // </button>
             ))}
         </div>
     );
